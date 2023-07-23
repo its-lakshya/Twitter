@@ -1,0 +1,886 @@
+body{
+    /* font-family:Arial, Helvetica, sans-serif */
+    font-family: 'Karla', sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+.leftsidebar{
+    display:inline-block;
+    /* background-color: yellow; */
+    width:25.2rem;
+    /* height:100vh; */
+    /* clear:both; */
+    /* overflow:hidden; */
+    top:0;
+    left:0;
+    position:fixed;
+}
+.main{
+    display:inline-block;
+    /* background-color:green; */
+    width:37.35rem;
+    /* overflow:hidden; */
+    top:0;
+    margin-left:25.75vw;
+    position:relative;
+    border-left:1px solid rgb(239, 239, 239);
+    border-right    :1px solid rgb(239, 239, 239);
+}
+.rightsidebar{
+    display:inline-block;
+    /* background-color: aqua; */
+    width:22rem;
+    position:fixed;
+    top:0;
+    margin-left:2rem;
+}
+.navigation{
+    position:relative;
+    width:14rem;
+    /* background-color:red; */
+    top:0;
+    left:8.7rem;
+}
+@keyframes twitterlogoanimation{
+    0% {background-color:white}
+    100% {background-color:#e8f4fc}
+}
+.twitterlogoborder{
+    width:3.2rem;
+    background-color:white ;
+    border-radius: 50%;
+    margin-top:0.2rem;
+    height:3.2rem;
+}
+.twitterlogoborder:hover{
+    animation-name:twitterlogoanimation;
+    animation-duration:0.3s;
+    animation-fill-mode: forwards;
+}
+.twitterlogo{
+    width:2rem;
+    margin-top:0.6rem;
+    margin-left:0.6rem;
+    
+    /* width:3rem; */
+}
+.navisymboles{
+    /* width:2.8rem;
+    text-align: center;
+    display:inline-block;
+    text-decoration: none; */
+    margin-top:0.7rem;
+}
+@keyframes navibuttonsanimation{
+    0% {background-color:white;}
+    100% {background-color:rgb(233, 232, 232);}
+}
+.navisymbole{
+    font-size:1.5rem;
+    margin-top:0rem;
+    margin-left:0.1rem;
+    margin-bottom:0.37rem;
+    word-spacing: 0rem;
+    background-color: white;
+    height:3.2rem;
+    padding-top:0.5rem;
+    padding-left:0.8rem;
+    border-radius:2rem;
+    /* width:2rem; */
+    /* display:inline-block; */
+}
+.navisymbole:hover{
+    animation-name:navibuttonsanimation;
+    animation-duration: 0.1s;
+    animation-fill-mode: forwards;
+}
+.naviname{
+    margin-left:0.7rem;
+    /* margin-left:2rem; */
+    font-size: 1.3rem;
+    margin-top:0.4rem;
+    letter-spacing: -0.02rem;
+    z-index:0;
+    /* top:0; */
+    /* width:4rem; */
+    /* display:relative; */
+}
+#explore{
+    word-spacing: 0.5rem;
+}
+#notifications{
+    word-spacing: 0.5rem;
+}
+#messages{
+    word-spacing: 0.4rem;
+}
+#bookmarks{
+    word-spacing: 0.5rem;
+}
+#spacing{
+    margin-left:0.23rem;
+}
+#lists{
+    word-spacing: 0.4rem;
+}
+#profile{
+    word-spacing: 0.5rem;
+}
+#more{
+    word-spacing: 0.5rem;
+    /* margin-bottom:1.7rem; */
+}
+.nevilinks{
+    text-decoration: none;
+    color:black;
+}
+.tweetbuttonbig{
+    margin-left:8.7rem;
+    background-color:#1DA1F2;
+    text-align: center;
+    text-decoration: none;
+    color:black;
+    width:13.95rem;
+    height:3.3rem;
+    margin-top:0.55rem;
+    /* padding:0.8rem 0 0 0; */
+    line-height: 3.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 1.8rem;
+    
+}
+@keyframes tweetanimation {
+    0% {background-color:#1DA1F2}
+    100% {background-color:#1c8dd3}
+}
+.tweetbuttonbig:hover{
+    animation-name: tweetanimation;
+    animation-duration:0.3s;
+    animation-fill-mode: forwards;
+    /* background-color: #1c8dd3; */
+}
+#tweetbuttonlink{
+    text-decoration: none;
+    color:white;
+}
+@keyframes acountanimation{
+    0% {background-color:white}
+    100% {background-color: rgb(233, 232, 232);}
+}
+.acount{
+    /* white-space:break-spaces; */
+    margin-left:8.2rem;
+    /* background-color:red; */
+    width:15.75rem;
+    height:3.9rem;
+    position:fixed;
+    bottom:0.8rem;
+    /* text-align:center; */
+    padding: 0.6rem 0 0  0.8rem;
+    border-radius: 2rem;
+    display:flex;
+    flex-flow:row ;
+    cursor: pointer;
+}
+.acount:hover{
+    animation-name:acountanimation;
+    animation-duration:0.3s;
+    animation-fill-mode: forwards;
+}
+.acountlink{
+    text-decoration:none;
+    color:black;
+}
+.userimage{
+    width:2.5rem;
+    height:2.6rem;
+    border-radius:50%;
+    /* margin-bottom: 0rem; */
+    /* display:inline-block; */
+    
+}
+.username{
+    margin-left:0.6rem;
+    font-weight:bold;
+    /* margin-bottom: 2rem; */
+    margin-top:0.2rem;
+    letter-spacing: -0.03rem;
+    /* background-color:yellow; */
+    /* display: inline-block; */
+}
+.userid{
+    font-size:0.9rem;
+    font-weight:normal;    
+}
+#thredots{
+    margin-top:0.9rem;
+    margin-left:4.2rem;
+    /* margin-bottom:10rem; */
+    /* height:4rem; */
+    /* padding-bottom:3rem;     */
+}
+
+@media screen and (max-width:1375px){
+    .navigation {left:4.5rem;}
+    .tweetbuttonbig{margin-left:4.5rem;}
+    .acount{margin-left:3.9rem;}
+}
+/* @media screen and (max-width:1160px){
+    .navigation {left:0;}
+    .tweetbuttonbig {margin-left:0;}
+    .acount {margin-left:0;}
+} */
+@media screen and (max-width:1160px){
+    .naviname {display:none;}
+    .tweetbuttonbig {display:none;}
+    .username {display:none;}
+    .userid {display:none;}
+    #thredots {display:none;}
+}
+.homebar{
+    background-color:white;
+    height:2.8rem;
+    padding-left:1rem;
+    /* padding-top:0.5rem; */
+    font-size:1.3rem;
+    position:sticky;
+    top:0;
+}
+.homepaddingtop{
+    padding-top:0.4rem;
+    display:inline-block;
+}
+#homelink{
+    text-decoration: none;
+    color:black;
+    display:inline;
+    margin-top:0.5rem;
+    font-weight:bold;
+}
+@keyframes staranimation{
+    0% {background-color:white}
+    100% {background-color:rgb(233, 232, 232)}
+}
+.starbackground{
+    margin-left:29.8rem;
+    background-color:white;
+    width:2.25rem;
+    letter-spacing:0.5rem;
+    /* margin-top:0rem; */
+    display:inline-block;
+    height: 2.25rem;  
+    border-radius:50%;
+    color:black;
+}
+.starbackground:hover{
+    animation-name:staranimation;
+    animation-duration:0.3s;
+    animation-fill-mode: forwards;
+}
+#star{
+    padding-left:0.6rem;
+    /* margin-left:31rem; */
+    font-size:1rem;
+    /* margin-top:0rem ; */
+    padding-top:0.6rem;
+    /* transform:rotate(35deg); */
+}
+.maketweetarea{
+    background-color:white;
+    height:7.9rem;
+    display:flex;
+    border-bottom:1px solid rgb(239, 239, 239);
+    
+}
+.userbigimage{
+    /* margin-left:1rem; */
+    display:inline-block;
+}
+#userimagebig{
+    width:3rem;
+    height:3rem;
+    border-radius:50%;
+    margin-left:1rem;
+    margin-top:0.5rem;
+    /* display:inline-block; */
+    
+}
+#tweetarea{
+    margin-left:0.8rem;
+    margin-top:1.55rem;
+    /* margin-bottom:0rem; */
+    /* display:inline-block; */
+    position:relative;
+    font-size:1.3rem;
+    font-weight:500;
+    letter-spacing:-0.03rem;
+    color:rgb(96, 93, 93);   
+}
+@keyframes smallbuttonsanimation{
+    0% {background-color: white;}
+    100% {background-color: #e0f3ff;}
+}
+.smallbuttons{
+    /* font-size:3rem; */
+    margin-top:4.8rem;
+    margin-left:-11.6rem;
+    display:flex;
+    /* z-index:1; */
+}
+#gallery:hover{
+    animation-name:smallbuttonsanimation;
+    animation-duration:0.3s;
+    animation-fill-mode: forwards;
+}
+#video:hover{
+    animation-name:smallbuttonsanimation;
+    animation-duration:0.3s;
+    animation-fill-mode: forwards;
+}
+#list:hover{
+    animation-name:smallbuttonsanimation;
+    animation-duration:0.3s;
+    animation-fill-mode: forwards;
+}
+#smiley:hover{
+    animation-name:smallbuttonsanimation;
+    animation-duration:0.3s;
+    animation-fill-mode: forwards;
+}
+#calendar:hover{
+    animation-name:smallbuttonsanimation;
+    animation-duration:0.3s;
+    animation-fill-mode: forwards;
+}
+#location:hover{
+    animation-name:smallbuttonsanimation;
+    animation-duration:0.3s;
+    animation-fill-mode: forwards;
+}
+#gallery{
+    /* color:white; */
+    width:2.2rem;
+    height:2.2rem;
+    /* background-color:green; */
+    color:#1da1f2;
+    border-radius: 50%;
+    padding-top:0.65rem;
+    padding-left:0.6rem;
+    margin-right:0.05rem;
+}
+#video{
+    /* color:white; */
+    width:2.2rem;
+    height:2.2rem;
+    /* background-color:green; */
+    color:#1da1f2;
+    border-radius: 50%;
+    padding-top:0.65rem;
+    padding-left:0.6rem;
+    margin-right:0.05rem;
+}
+#list{
+    /* color:white; */
+    width:2.2rem;
+    height:2.2rem;
+    /* background-color:green; */
+    color:#1da1f2;
+    border-radius: 50%;
+    padding-top:0.65rem;
+    padding-left:0.67rem;
+    margin-right:0.05rem;
+}
+#smiley{
+    /* color:white; */
+    width:2.2rem;
+    height:2.2rem;
+    /* background-color:green; */
+    color:#1da1f2;
+    border-radius: 50%;
+    padding-top:0.65rem;
+    padding-left:0.6rem;
+    margin-right:0.05rem;
+}
+#calendar{
+    /* color:white; */
+    width:2.2rem;
+    height:2.2rem;
+    /* background-color:green; */
+    color:#1da1f2;
+    border-radius: 50%;
+    padding-top:0.65rem;
+    padding-left:0.65rem;
+    margin-right:0.05rem;
+}
+#location{
+    /* color:white; */
+    width:2.2rem;
+    height:2.2rem;
+    /* background-color:green; */
+    color:#1da1f2;
+    border-radius: 50%;
+    padding-top:0.65rem;
+    padding-left:0.7rem;
+    margin-right:0.05rem;
+}
+#tweetbutt{
+    text-decoration: none;
+    color:white;
+    
+}
+
+.tweetbuttonsmall{
+    /* text-decoration:none; */
+    width:4.75rem; 
+    margin-left:13.7rem; 
+    margin-top:-0.1rem;
+    background-color: #8fcef5;
+    height:2.3rem;  
+    text-align: center;
+    padding-top:0.6rem;
+    border-radius: 2rem;
+    font-weight: bold;
+    /* z-index:0; */
+}
+#showtweets{
+    text-decoration: none;
+    color:#1da1f2;
+}
+@keyframes showtweetsanimation{
+    0% {background-color:white}
+    100% {background-color:rgb(245, 245, 245)}
+}
+.showtweets{
+    background-color:white;
+    height:3rem;
+    text-align: center;
+    padding-top:0.8rem;
+    font-size: 1rem;
+    margin-top:0.3rem;
+    border-bottom:1px solid rgb(242, 241, 241);
+    
+}
+.showtweets:hover{
+    animation-name:showtweetsanimation;
+    animation-duration:0.3s;
+    animation-fill-mode: forwards;
+    border-bottom:1px solid rgb(239, 239, 239);
+}
+.tweetdisplaylink{
+    text-decoration:none;
+}
+@keyframes tweetdisplayanimation{
+    0% {background-color: white;}
+    100% {background-color:rgb(245, 245, 245);}
+}
+.tweetdisplay{
+    /* background-color:yellow; */
+    height:31.5rem;
+    border-bottom:1px solid rgb(239, 239, 239);
+    color:black;
+    z-index:1;
+    background-color: white;
+}
+.tweetdisplay:hover{
+    animation-name:tweetdisplayanimation;
+    animation-duration:0.3s;
+    animation-fill-mode: forwards;
+    cursor:pointer;
+}
+#smallmessage{
+    margin-left:3.1rem;
+    font-size: 0.7rem;
+    /* margin-top:1rem; */
+    color:rgb(112, 112, 112);
+}
+@keyframes crosssignanimation{
+    0% {background-color:white;}
+    100% {background-color:#e0f3ff;}
+}
+.viraltweetslink{
+    text-decoration:none;
+    margin-left:0.76rem;
+    margin-right:0.13rem;
+}
+.viraltweets{
+    margin-top:0rem;
+    font-size:0.8rem;
+    font-weight:900;
+    letter-spacing:-0.023rem;
+    color:#657786;
+    
+}
+.viraltweets:hover{
+    text-decoration: underline;
+}
+.seemorelink{
+    text-decoration:none;
+}
+.seemore{
+    font-size:0.8rem;
+    font-weight:800;
+    color:#1da1f2;
+
+}
+.seemore:hover{
+    text-decoration: underline;
+}
+@keyframes crosssignanimation{
+    0% {background-color:none;}
+    100% {background-color:#e0f3ff;}
+}
+.crosssignlink{
+    margin-left:20.7rem;
+}
+#crosssign{
+    /* margin-left:20.7rem; */
+    margin-top:0.5rem;
+    /* background-color:white; */
+    width:2.1rem;
+    height:2.1rem;
+    text-align:center;
+    padding-top:0.55rem;
+    border-radius:50%;
+    font-size:1.1rem;
+    color:#657786;
+}
+#crosssign:hover{
+    animation-name:crosssignanimation;
+    animation-duration:0.3s;
+    animation-fill-mode: forwards;
+}
+.originaltweet{
+    display:flex;
+    margin-top:0.45rem;
+    /* float:inline-start; */
+}
+#tweetersimage{
+    width:3rem;
+    height:3rem;
+    border-radius: 50%;
+    margin-left:1rem;
+    /* display:inline-block; */
+}
+.tweetsinfo{
+    /* background-color: yellow; */
+    /* display:flex; */
+    /* margin-left:4.8rem; */
+    margin-top:0rem;
+    margin-left:0.78rem; 
+    /* display:inline-block;*/
+}
+.tweetersname{
+    margin-top:0.3rem;    
+    font-weight:bold;
+    letter-spacing: -0.03rem;
+}
+.tweetersnamelink{
+    text-decoration: none;
+    color:black;
+}
+.tweetersname:hover{
+    text-decoration: underline;
+}
+.tweetersusername{
+    margin-top:0.5rem;
+    margin-left:0.4rem;
+}
+.tweetersusernamelink{
+    text-decoration: none;
+    color:#657786;
+}
+
+.dot{
+    margin-top:0.25rem;
+    margin-left:0.1rem;
+    color:#657786;
+}
+.timelink{
+    text-decoration: none;
+    margin-top:0.5rem;
+    margin-left:0.1rem;
+    color:#657786;
+}
+.time:hover{
+    text-decoration: underline;
+}
+@keyframes threedotsanimation{
+    0% {background-color:none;}
+    100% {background-color:#e0f3ff;color:#1da1f2}
+}
+
+#threedots{
+    margin-left:15rem;
+    margin-bottom:0;
+    color:#657786;
+    
+    width:2.1rem;
+    height:2.1rem;
+    /* background-color:red; */
+    border-radius:50%;
+    text-align:center;
+    padding-top:0.5rem;
+    /* background-color: white; */
+    text-align: center;
+    z-index:-1;
+    padding-top:0.55rem;
+    border-radius: 50%;
+    
+}
+#threedots:hover{
+    animation-name: threedotsanimation;
+    animation-duration:0.3s;
+    animation-fill-mode: forwards;
+}
+.abouttweet{
+    margin-top:0.3rem;
+    letter-spacing: -0.03rem;
+}
+.tweetedimage{
+    margin-top:1rem;
+    width:31.5rem;
+    height:17.6rem;
+    border-radius: 1rem;
+    border:1px solid rgb(239, 239, 239);
+}
+@keyframes reactionanimation{
+    0% {background-color: none;}
+    100% {background-color:#e0f3ff;color:#1da1f2}
+}
+.reactions{
+    /* background-color:yellow; */
+    margin-left: 4.2rem;
+}
+#view{
+    color:#657786;
+    width:2.1rem;
+    height:2.1rem;;
+
+    border-radius:50%;
+    text-align:center;
+    padding-top:0.5rem;
+    
+
+}
+#view:hover{
+    animation-name:reactionanimation;
+    animation-duration:0.3s;
+    animation-fill-mode:forwards;
+}
+#comments{
+    color:#657786;
+    width:2.1rem;
+    height:2.1rem;;
+
+    border-radius:50%;
+    text-align:center;
+    padding-top:0.5rem;
+    margin-left:2.2rem
+
+}
+#comments:hover{
+    animation-name:reactionanimation;
+    animation-duration:0.3s;
+    animation-fill-mode:forwards;
+}
+#retweet{
+    color:#657786;
+    width:2.1rem;
+    height:2.1rem;;
+
+    border-radius:50%;
+    text-align:center;
+    padding-top:0.5rem;
+    margin-left:2.2rem
+
+}
+#retweet:hover{
+    animation-name:reactionanimation;
+    animation-duration:0.3s;
+    animation-fill-mode:forwards;
+}
+#like{
+    color:#657786;
+    width:2.1rem;
+    height:2.1rem;;
+
+    border-radius:50%;
+    text-align:center;
+    padding-top:0.5rem;
+    margin-left:2.2rem
+
+}
+#like:hover{
+    animation-name:reactionanimation;
+    animation-duration:0.3s;
+    animation-fill-mode:forwards;
+}
+#share  {
+    color:#657786;
+    width:2.1rem;
+    height:2.1rem;
+    border-radius:50%;
+    text-align:center;
+    padding-top:0.5rem;
+    margin-left:2.2rem
+
+}
+#share:hover{
+    animation-name:reactionanimation;
+    animation-duration:0.3s;
+    animation-fill-mode:forwards;
+}
+@keyframes reactionnumbersanimation{
+    0% {color:#657786;}
+    100% {color:#1da1f2;}
+}
+
+.reactionnumbers{
+    font-size:0.85rem;
+    color:#657786;
+}
+.reactionnumbers:hover {
+    animation-name:reactionnumbersanimation;
+    animation-duration:0.3s;
+    animation-fill-mode:forwards;
+}
+.searchbar{
+    display:flex;
+    /* background-color: yellow; */
+    /* margin-left:2rem; */
+    height: 2.8rem;
+    margin-top:0.3rem;
+    border-radius: 2rem;
+    text-align:center;
+    color:rgb(96, 93, 93);
+    background-color:#F5F8FA;
+}
+#searchbarbutton{
+    margin-left: 1.2rem;
+    margin-top:0.9rem;
+}
+.searcharea{
+    margin-left:1.2rem;
+    margin-top:0.8rem;
+    letter-spacing: -0.03rem;
+}
+.whatshappening{
+    /* background-color:yellow; */
+    height:32rem;
+    margin-top:1rem;
+    border-radius:1rem;
+    display:flex;
+    flex-flow:column;
+    background-color:#F5F8FA;
+}
+.whatshappeningheading{
+    font-size:1.25rem;
+    font-weight:800;
+    letter-spacing:-0.03rem;
+    margin-left:1rem;
+    margin-top:0.8rem;
+}
+@keyframes trendinganimation{
+    0% {background-color:#F5F8FA;}
+    100% {background-color:#E1E8ED;}
+}
+.trending{
+    /* background-color:red; */
+    /* margin-left:1rem; */
+    margin-top:0.8rem;
+    height:5.15rem;
+}
+.trending:hover{
+    animation-name:trendinganimation;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+.trendtype{
+    font-size:0.8rem;
+    margin-top:0.1rem;
+    display:flex;
+    margin-bottom:0;
+    flex-flow:column;
+    margin-left:1rem;
+}
+@keyframes threedotstrendinganimation{
+    0% {background-color:none;}
+    100% {background-color:#e0f3ff;color:#1da1f2}
+}
+.threedotstrending{
+    margin-left:14.9rem;
+    margin-top:0.5rem;
+    
+    
+}
+#threedotstrending{
+    font-size:1rem;
+    width:2.1rem;
+    height:2.1rem;
+    border-radius:50%;
+    /* background-color:green; */
+    text-align: center;
+    padding-top:0.55rem;
+    color:#657786;
+   
+}
+#threedotstrending:hover{
+    animation-name:threedotstrendinganimation;
+    animation-duration:0.3s;
+    animation-fill-mode:forwards;
+}
+.abouttrend{
+    /* background-color:yellow; */
+    margin-top:-0.3rem;
+    font-size: 1rem;
+    font-weight:700;
+    letter-spacing: -0.03rem;
+}
+.nooftweets{
+    margin-top:0.3rem;
+}
+.showmoretrending{
+    color:#1da1f2;
+    /* margin-top:0.8rem; */
+    padding:1rem;
+    /* background-color:green; */
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+.showmoretrending:hover{
+    animation-name:trendinganimation;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+@media all and (max-width:1335px){
+    .rightsidebar {margin-left:0px;}
+}
+@media all and (max-width:1160px){
+    .main {margin-left: 15vw;}
+}
+@media all and (max-width:1000px){
+    .rightsidebar {width:12rem;}
+}
+@media all and (max-width:890px){
+    .rightsidebar {width:12rem;}
+}
+@media all and (max-width:935px){
+    .rightsidebar {display:none;}
+    .navigation {left:3rem;}
+    .acount {margin-left:3rem;padding:0;}
+    .userimage {margin-left:0;}
+    /* .main {margin-left:5vw;} */
+}
+@media all and (max-width:680px){
+    .navigation {left:0;}
+    .acount {margin-left:0;padding:0;}
+    .userimage {margin-left:0;}
+}
+@media all and (max-width:500px){
+    .leftsidebar {display:none;}
+    .acount {display:none;}
+}
+
+
