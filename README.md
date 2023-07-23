@@ -2,7 +2,7 @@
 
 # Twitter
 
-### [Project Link](https://its-lakshya.github.io/Twitter/Twitter.html)
+### [Project Link](https://its-lakshya.github.io/Twitter/)
 
 This project is a clone of the Twitter home page, created with HTML and CSS. The project aims to replicate the layout, design, and functionality of the original website, using only front-end technologies. The project features responsive elements such as hover effects, icons, and buttons. The project demonstrates the use of semantic HTML, CSS grid and flexbox, and media queries to create a modern and user-friendly web page.
 
