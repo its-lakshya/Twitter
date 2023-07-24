@@ -54,4 +54,9 @@ The web application will be responsive, meaning that it will adapt to different 
 
 **Client:** HTML5, CSS3
 
+## 🔗 Links
+[![github](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/its-lakshya)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/lakshyakumar-/)
+[![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/its_lakshya)
+
 
